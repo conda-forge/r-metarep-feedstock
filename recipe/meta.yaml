@@ -1,4 +1,4 @@
-{% set version = '1.2.0' %}
+{% set version = "1.2.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,11 +9,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/metarep_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/metarep/metarep_{{ version }}.tar.gz
-  sha256: c9ea8481e702f3236e74fb3b37b2816778a1b48349e190b05de0591f6cdbae13
+  sha256: 12341d5c0b0e26b88071d2f2a05b330b4713303509f17be3a1fe5b3d72d6765c
 
 build:
   noarch: generic
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
